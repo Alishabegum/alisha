@@ -1,0 +1,28 @@
+//COLLECTION USING ARRAYLIST
+import java.util.*;
+class fruit{
+	int id;
+	String name;
+	int quantity;
+	public fruit(int id,String name,int quantity){
+		this.id=id;
+		this.name=name;
+		this.quantity=quantity;
+}
+}
+public class Collection {
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	List<fruit> list=new ArrayList<fruit>();
+	fruit f1 = new fruit(1,"mango",10);
+	fruit f2 = new fruit(2,"apple",20);
+	fruit f3 = new fruit (3,"custard",15);
+list.add(f1);
+list.add(f2);
+list.add(f3);
+for(fruit f:list){
+	System.out.println(f.id+""+f.name+""+f.quantity);
+}
+	}
+
+}

@@ -1,0 +1,20 @@
+//catch try finally
+public class Expectional {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a[]=new int [2];
+		try{
+			System.out.println("access element three:" +a[3]);
+		}catch(ArrayIndexOutOfBoundsException e){
+			System.out.println("expection thrown:" +e);
+		}finally{
+			a[0]=2;
+			System.out.println("first element value:"+a[0]);
+			System.out.println("the finally statement is exceuted");
+		}
+		
+
+	}
+
+}

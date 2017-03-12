@@ -1,0 +1,30 @@
+//INTERFACE WITH ABSTRACTION
+interface ALL {
+	void x();
+	void y();
+	void z();
+
+}
+
+abstract class B implements ALL{
+public void z()
+{System.out.println("method implemented from interface");}
+}
+
+class C extends B {
+	public void x()
+	{System.out.println("method1 implemented from interface and extends in class");}
+	public void y()
+	{System.out.println("method2 implemented from interface and extends in class ");}
+}
+
+class classA{
+	public static void main(String args[])
+	{
+		ALL a = new C();
+		a.x();
+		a.y();
+		a.z();
+	}
+}
+	
