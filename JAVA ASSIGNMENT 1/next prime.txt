@@ -1,0 +1,26 @@
+import java.util.*;
+public class nextprime {
+	public static void main(String args[])
+	{
+		int n,i,j,q=0;
+		System.out.println("enter a number:");
+		Scanner s= new Scanner (System.in);
+		n=s.nextInt();
+		for(i=n+1;i<=100;i++){
+			for(j=2;j<i;j++){
+				if(i%j==0)
+				{
+					q=1;
+					break;
+				}
+			}
+			if(q==0)
+			{
+				System.out.println("next prime is :"+i);
+			}
+			q=0;
+		}
+				
+	}
+
+}

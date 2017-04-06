@@ -1,0 +1,14 @@
+import java.util.*;
+public class fact {
+	public static void main(String args[]){
+		int i,q=1,n;
+		System.out.println("enter a number:");
+		Scanner s=new Scanner (System.in);
+		n=s.nextInt();
+		for(i=1;i<=n;i++)
+		{
+			q=q*i;
+		}
+		System.out.println("factorial of a number:"+q);
+	}
+}

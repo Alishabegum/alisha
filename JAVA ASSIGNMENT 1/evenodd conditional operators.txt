@@ -1,0 +1,10 @@
+import java.util.*;
+public class evenodd {
+	public static void main(String[] args) {
+	int a;
+	Scanner e = new Scanner(System.in);
+	System.out.println("enter a number:");
+	a=e.nextInt();
+	System.out.printf("number is %s", (a%2==0 ? "even":"odd")); 
+	}
+}

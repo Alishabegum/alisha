@@ -1,0 +1,16 @@
+import java.util.*;
+public class dofact {
+	public static void main(String args[]){
+		int i=1,n,q=1;
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter a number:");
+		n=s.nextInt();
+		do{
+			q=q*i;
+			i++;
+		}
+		while(i<=n);{
+			System.out.println("factorial of number:"+q);
+		}
+	}
+}

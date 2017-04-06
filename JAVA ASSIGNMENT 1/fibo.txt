@@ -1,0 +1,17 @@
+import java.util.*;
+public class fibo {
+	public static void main(String args[]){
+		int n,f=0,s=1,t=0,i,c=10;
+		System.out.println("enter the numbers:");
+		Scanner e=new Scanner(System.in);
+		n=e.nextInt();
+		System.out.println(" "+f);
+		for(i=2;i<c;i++)
+		{
+			t=f+s;
+			System.out.println(" "+t);
+			f=s;
+			s=t;
+		}
+	}
+}

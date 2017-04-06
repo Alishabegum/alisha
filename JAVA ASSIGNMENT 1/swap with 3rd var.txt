@@ -1,0 +1,17 @@
+import java.util.*;
+public class swap {
+	public static void main(String args[])
+	{
+		int a,b;
+		Scanner s = new Scanner (System.in);
+		System.out.println("enter two values:");
+		a=s.nextInt();
+		b=s.nextInt();
+		a=a+b;
+		b=a-b;
+		a=a-b;
+		System.out.println("value of a:"+a);
+		System.out.println("Value of b:"+b);
+	}
+
+}
